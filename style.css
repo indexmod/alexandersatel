@@ -1,6 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Oranienbaum|Stalinist+One');
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Oranienbaum|Stalinist+One');
 
 h1 
+
+{
+    font-family: 'Bad Script', cursive;
+
+}
+
+h2 
 
 {
     font-family: 'Stalinist One', cursive;
@@ -12,6 +19,8 @@ p
     font-family: 'Oranienbaum', serif;
 
 }
+
+
 
 
 
