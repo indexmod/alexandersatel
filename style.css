@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Bad+Script|Oranienbaum|Stalinist+One');
+@import url('https://fonts.googleapis.com/css?family=Oranienbaum');
 
 #wrapper {
     width: 100%;
@@ -13,20 +13,23 @@
 h1 
 
 {
-    font-family: 'Bad Script', cursive;
+    font-family: 'Oranienbaum';
+    font-size: 150%;
 
 }
 
 h2 
 
 {
-    font-family: 'Stalinist One', cursive;
+    font-family: 'Oranienbaum';
+    font-size: 100%;
 }
 
 p
 
 {
-    font-family: 'Oranienbaum', serif;
+    font-family: 'Oranienbaum';
+    font-size: 50%;
 
 }
 
