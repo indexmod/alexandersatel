@@ -8,14 +8,11 @@
     padding: 1 1 1 1;
 }
 
-
-
 h1 
 
 {
     font-family: 'Oranienbaum';
     font-size: 140%;
-
 }
 
 h2 
@@ -26,15 +23,10 @@ h2
 }
 
 p
-
 {
     font-family: 'Oranienbaum';
     font-size: 100%;
-
 }
-
-
-
 
 
 body
@@ -54,23 +46,23 @@ img {
 /* unvisited link */
 
 a:link {
-    color: grey;
+    color: red;
     text-decoration: none;
 }
 /* visited link */
 
 a:visited {
-    color: grey;
+    color: red;
     text-decoration: none;
 }
 /* mouse over link */
 
 a:hover {
-    color: grey;
+    color: red;
     text-decoration: none;
 }
 /* selected link */
 
 a:active {
-    color: grey;
+    color: red;
     text-decoration: none;
