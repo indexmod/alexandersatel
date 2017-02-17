@@ -51,21 +51,29 @@ img {
 a:link {
     color: black;
     text-decoration: none;
+    font-size: 200%;
+    font-weight: bolder;
 }
 /* visited link */
 
 a:visited {
     color: black;
     text-decoration: none;
+    font-size: 200%;
+    font-weight: bolder;
 }
 /* mouse over link */
 
 a:hover {
     color: black;
     text-decoration: none;
+    font-size: 200%;
+    font-weight: bolder;
 }
 /* selected link */
 
 a:active {
     color: black;
     text-decoration: none;
+    font-size: 200%;
+    font-weight: bolder;
