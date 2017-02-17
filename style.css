@@ -36,7 +36,7 @@ p
 
 body
 {
-    max-width: 1500px;
+    max-width: 100%;
     height: auto;
     
 }
@@ -50,6 +50,8 @@ img {
 /* unvisited link */
 
 a:link {
+     font-family: 'Oranienbaum';
+    font-weight: lighter;
     color: black;
     text-decoration: none;
     font-size: 200%;
@@ -57,6 +59,8 @@ a:link {
 /* visited link */
 
 a:visited {
+     font-family: 'Oranienbaum';
+    font-weight: lighter;
     color: black;
     text-decoration: none;
     font-size: 200%;
@@ -64,6 +68,8 @@ a:visited {
 /* mouse over link */
 
 a:hover {
+     font-family: 'Oranienbaum';
+    font-weight: lighter;
     color: black;
     text-decoration: none;
     font-size: 200%;
@@ -71,6 +77,8 @@ a:hover {
 /* selected link */
 
 a:active {
+    font-family: 'Oranienbaum';
+    font-weight: lighter;
     color: black;
     text-decoration: none;
     font-size: 200%;
