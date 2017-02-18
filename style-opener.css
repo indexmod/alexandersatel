@@ -43,8 +43,8 @@ body
 img {
     max-width: 100%;
     height: auto;
-    -webkit-filter: saturate(200%); /* Safari */
-    filter: saturate(200%);
+-webkit-filter: grayscale(100%); /* Safari */
+    filter: grayscale(100%);
 }
 
 
