@@ -43,8 +43,8 @@ body
 img {
     max-width: 100%;
     height: auto;
--webkit-filter: saturate(50%), blur(5px); /* Safari */
-    filter: saturate(50%), blur(5px);
+    -webkit-filter: blur(5px), saturate(50%); /* Safari */
+    filter: blur(5px), saturate(50%);
 }
 
 
