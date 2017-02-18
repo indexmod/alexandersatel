@@ -44,9 +44,10 @@ body
 }
 
 
-img {
-    max-width: 100%;
-    height: auto;
+small-logo {
+    width: auto;
+    height: 20;
+    float: right
 }
 
 
