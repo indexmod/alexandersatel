@@ -44,7 +44,7 @@ body
 }
 
 
-small-logo {
+.small-logo {
     width: auto;
     height: 20;
     float: right
