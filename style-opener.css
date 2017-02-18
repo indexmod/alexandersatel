@@ -43,10 +43,9 @@ body
 img {
     max-width: 100%;
     height: auto;
-    -webkit-filter: blur(5px), saturate(50%); /* Safari */
-    filter: blur(5px), saturate(50%);
+    -webkit-filter: blur(10px), saturate(50%); /* Safari */
+    filter: blur(10px), saturate(50%);
 }
-
 
 
 /* unvisited link */
