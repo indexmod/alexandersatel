@@ -21,7 +21,7 @@ h2
     font-family: 'Georgia', 'Times';
     font-size: 100%;
     font-weight: 200;
-     color: #4169E1;
+     color: grey;
   
     
 }
@@ -54,28 +54,28 @@ img {
 /* unvisited link */
 
 a:link {
-    color: black;
+    color: grey;
     text-decoration: none;
-    font-size: 200%;
+    font-size: 100%;
 }
 /* visited link */
 
 a:visited {
-    color: black;
+    color: grey;
     text-decoration: none;
-    font-size: 200%;
+    font-size: 100%;
 }
 /* mouse over link */
 
 a:hover {
-    color: black;
-    text-decoration: none;
-    font-size: 200%;
+    color: grey;
+    text-decoration: underline;
+    font-size: 100%;
 }
 /* selected link */
 
 a:active {
-    color: black;
+    color: grey;
     text-decoration: none;
-    font-size: 200%;
+    font-size: 100%;
 }
