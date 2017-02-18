@@ -43,8 +43,8 @@ body
 img {
     max-width: 100%;
     height: auto;
--webkit-filter: hue-rotate(180deg), blur(3px); /* Safari */
-    filter: hue-rotate(180deg), blur(3px);
+-webkit-filter: hue-rotate(180deg), blur(5px); /* Safari */
+    filter: hue-rotate(180deg), blur(5px);
 }
 
 
