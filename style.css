@@ -40,8 +40,9 @@ p
 {
     font-family: 'Arial', 'Monaco';
     font-size: 100%;
-    font-weight: 100;
+    font-weight: lighter;
     line-height: 1.5;
+    color: silver;
     
 }
 
