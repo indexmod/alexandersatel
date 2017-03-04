@@ -69,26 +69,34 @@ body
 a:link {
     color: grey;
     text-decoration: none;
-    font-size: 100%;
+    font-size: 120%;
+    font-weight: 100;
+    line-height: 1.5;
 }
 /* visited link */
 
 a:visited {
     color: grey;
     text-decoration: none;
-    font-size: 100%;
+    font-size: 120%;
+    font-weight: 100;
+    line-height: 1.5;
 }
 /* mouse over link */
 
 a:hover {
     color: grey;
     text-decoration: underline;
-    font-size: 100%;
+    font-size: 120%;
+    font-weight: 100;
+    line-height: 1.5;
 }
 /* selected link */
 
 a:active {
     color: grey;
     text-decoration: none;
-    font-size: 100%;
+    font-size: 120%;
+    font-weight: 100;
+    line-height: 1.5;
 }
