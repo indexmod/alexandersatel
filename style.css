@@ -1,102 +1,129 @@
+/* Общие настройки */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', 'Times', serif;
+  background: #fff;
+  color: #000;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Обёртка */
+
 #wrapper {
-    width: 100%;
-    min-width: 100px;
-    max-width: 700px;
-    margin: 0px auto;
-    padding: 1 1 1 1;
+  width: 100%;
+  min-width: 100px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
-h1 
+/* Заголовки */
 
-{
-    font-family: 'Georgia', 'Times';
-    font-size: 250%;
-    font-weight: 300;
-
+h1 {
+  font-family: 'Georgia', 'Times', serif;
+  font-size: 250%;
+  font-weight: 300;
+  text-align: center;
 }
 
-h2 
-
-{
-    font-family: 'Georgia', 'Times';
-    font-size: 100%;
-    font-weight: 200;
-     color: grey;
-  
-    
+h2 {
+  font-family: 'Georgia', 'Times', serif;
+  font-size: 100%;
+  font-weight: 200;
+  color: grey;
+  text-align: center;
 }
 
-p
-{
-    text-indent: 10%;
-    font-family: 'Georgia', 'Times';
-    font-size: 120%;
-    font-weight: 100;
-    line-height: 1.5;
-    
+/* Параграфы и подписи */
+
+p {
+  text-indent: 10%;
+  font-family: 'Georgia', 'Times', serif;
+  font-size: 120%;
+  font-weight: 100;
+  line-height: 1.5;
 }
 
-.caption
-{
-    font-family: 'Arial', 'Monaco';
-    font-size: 100%;
-    font-weight: lighter;
-    line-height: 1.5;
-    color: #996633;
-    
+.caption {
+  font-family: 'Arial', 'Monaco', monospace;
+  font-size: 100%;
+  font-weight: lighter;
+  line-height: 1.5;
+  color: #996633;
 }
 
-
-body
-{
-    font-family: 'Georgia', 'Times';
-    max-width: 100%;
-    height: auto;
-    
-}
-
+/* Малый логотип */
 
 .small-logo {
-    width: auto;
-    height: 20;
-    float: right
+  width: auto;
+  height: 20px;
+  float: right;
 }
 
+/* Галерея */
 
-
-/* unvisited link */
-
-a:link {
-    color: #996633;
-    text-decoration: none;
-    font-size: 120%;
-    font-weight: 100;
-    line-height: 1.5;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
 }
-/* visited link */
 
-a:visited {
-    color: #996633;
-    text-decoration: none;
-    font-size: 120%;
-    font-weight: 100;
-    line-height: 1.5;
+.gallery a {
+  display: block;
+  border: 1px solid #ddd;
+  padding: 4px;
+  background: #fafafa;
+  transition: box-shadow 0.3s ease;
 }
-/* mouse over link */
+
+.gallery a:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: grayscale(85%);
+}
+
+/* Ссылки */
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #996633;
+  text-decoration: none;
+  font-size: 120%;
+  font-weight: 100;
+  line-height: 1.5;
+}
 
 a:hover {
-    color: #996633;
-    text-decoration: underline;
-    font-size: 120%;
-    font-weight: 100;
-    line-height: 1.5;
+  text-decoration: underline;
 }
-/* selected link */
 
-a:active {
-    color: #996633;
-    text-decoration: none;
-    font-size: 120%;
-    font-weight: 100;
-    line-height: 1.5;
+/* Мобильная адаптация */
+
+@media (max-width: 500px) {
+  #wrapper {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 200%;
+  }
+
+  h2 {
+    font-size: 90%;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
 }
