@@ -96,41 +96,38 @@
 
     <h1>S A T E L</h1>
     <div class="container">
-        <p>
-    На&nbsp;этой странице представлены 28 работ Александра Сателя.<br>
-    Каждый раз порядок изображений меняется случайным образом.<br>
-    Все изображения взяты с <a href="https://satel.indexmod.xyz" style="color: #aaa">официального сайта</a>.
-</p>
-<ol>
-  <li><a href="#artwork-1">Военный на фоне Москвы / Military man on Moscow landscape</a></li>
-  <li><a href="#artwork-2">Венецианский сюрприз / Venetian surprise</a></li>
-  <li><a href="#artwork-3">Кутузов на фоне старинной Москвы / Kutuzov on the background of old Moscow</a></li>
-  <li><a href="#artwork-4">Лодка на пруду / The boat on the pond</a></li>
-  <li><a href="#artwork-5">Мужчина с усами / The man with the mustache</a></li>
-  <li><a href="#artwork-6">Женщина в балахоне / Woman in robe</a></li>
-  <li><a href="#artwork-7">Моряк и нимфа / Seaman and nymph</a></li>
-  <li><a href="#artwork-8">Нимфа и купидон / Nymph and Cupid</a></li>
-  <li><a href="#artwork-9">Нимфа на берегу / Nymph on the shore</a></li>
-  <li><a href="#artwork-10">Баба и морячок / Baba and the morjachok</a></li>
-  <li><a href="#artwork-11">Любовник из сна / A lover of sleep</a></li>
-  <li><a href="#artwork-12">Полет над Москвой / Flying over Moscow</a></li>
-  <li><a href="#artwork-13">Нимфа и Пегас / Nymph and Pegasus</a></li>
-  <li><a href="#artwork-14">Кадакес / Cadaqués</a></li>
-  <li><a href="#artwork-15">Отдых с попугаями / With parrots</a></li>
-  <li><a href="#artwork-16">Персидская дорога / Persian road</a></li>
-  <li><a href="#artwork-17">Кофейник с жемчугом / Coffee pot and pearls</a></li>
-  <li><a href="#artwork-18">Мадам "Плодородие" / Madame "Fertility"</a></li>
-  <li><a href="#artwork-19">Пара у самовара / Couple at the samovar</a></li>
-  <li><a href="#artwork-20">Мужчина с бокалом / A man with a glass</a></li>
-  <li><a href="#artwork-21">Натюрморт с нецке / Still-life with netsuke</a></li>
-  <li><a href="#artwork-22">На мосту / On Bridge</a></li>
-  <li><a href="#artwork-23">Натюрморт с самоваром, раками и баранками / Still-life with a samovar, crayfish and bagels</a></li>
-  <li><a href="#artwork-24">Девушка в черном / Girl in black</a></li>
-  <li><a href="#artwork-25">Супрематическая композиция Александра Сателя / Suprematist composition by Alexander Satel</a></li>
-  <li><a href="#artwork-26">Пес и трофеи / Dog and trophies</a></li>
-  <li><a href="#artwork-27">Кувшин и чужой / Pitcher and alien</a></li>
-  <li><a href="#artwork-28">Кутузов на фоне Москвы / Kutuzov on Moscow landscape</a></li>
-</ol>
+        <div style="margin-bottom: 2em; font-size: 16px;">
+  <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+    <a href="#artwork-1" style="text-decoration: none; color: inherit;">1</a>
+    <a href="#artwork-2" style="text-decoration: none; color: inherit;">2</a>
+    <a href="#artwork-3" style="text-decoration: none; color: inherit;">3</a>
+    <a href="#artwork-4" style="text-decoration: none; color: inherit;">4</a>
+    <a href="#artwork-5" style="text-decoration: none; color: inherit;">5</a>
+    <a href="#artwork-6" style="text-decoration: none; color: inherit;">6</a>
+    <a href="#artwork-7" style="text-decoration: none; color: inherit;">7</a>
+    <a href="#artwork-8" style="text-decoration: none; color: inherit;">8</a>
+    <a href="#artwork-9" style="text-decoration: none; color: inherit;">9</a>
+    <a href="#artwork-10" style="text-decoration: none; color: inherit;">10</a>
+    <a href="#artwork-11" style="text-decoration: none; color: inherit;">11</a>
+    <a href="#artwork-12" style="text-decoration: none; color: inherit;">12</a>
+    <a href="#artwork-13" style="text-decoration: none; color: inherit;">13</a>
+    <a href="#artwork-14" style="text-decoration: none; color: inherit;">14</a>
+    <a href="#artwork-15" style="text-decoration: none; color: inherit;">15</a>
+    <a href="#artwork-16" style="text-decoration: none; color: inherit;">16</a>
+    <a href="#artwork-17" style="text-decoration: none; color: inherit;">17</a>
+    <a href="#artwork-18" style="text-decoration: none; color: inherit;">18</a>
+    <a href="#artwork-19" style="text-decoration: none; color: inherit;">19</a>
+    <a href="#artwork-20" style="text-decoration: none; color: inherit;">20</a>
+    <a href="#artwork-21" style="text-decoration: none; color: inherit;">21</a>
+    <a href="#artwork-22" style="text-decoration: none; color: inherit;">22</a>
+    <a href="#artwork-23" style="text-decoration: none; color: inherit;">23</a>
+    <a href="#artwork-24" style="text-decoration: none; color: inherit;">24</a>
+    <a href="#artwork-25" style="text-decoration: none; color: inherit;">25</a>
+    <a href="#artwork-26" style="text-decoration: none; color: inherit;">26</a>
+    <a href="#artwork-27" style="text-decoration: none; color: inherit;">27</a>
+    <a href="#artwork-28" style="text-decoration: none; color: inherit;">28</a>
+  </div>
+</div>
     </div>
 
     <div class="gallery" id="gallery"></div>
@@ -158,7 +155,7 @@
 
                 const number = document.createElement("div");
                 number.className = "gallery-number";
-                number.textContent = idx + 1;
+                number.textContent = item.index;
 
                 container.appendChild(img);
                 container.appendChild(number);
