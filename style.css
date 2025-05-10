@@ -1,4 +1,4 @@
-/* Общие настройки */
+/* ========== Общие настройки ========== */
 
 body {
   margin: 0;
@@ -8,9 +8,10 @@ body {
   color: #000;
   max-width: 100%;
   height: auto;
+  line-height: 1.5;
 }
 
-/* Обёртка */
+/* ========== Обёртка ========== */
 
 #wrapper {
   width: 100%;
@@ -18,52 +19,61 @@ body {
   max-width: 700px;
   margin: 0 auto;
   padding: 1rem;
+  text-align: left;
 }
 
-/* Заголовки */
+/* ========== Заголовки ========== */
 
 h1 {
-  font-family: 'Georgia', 'Times', serif;
   font-size: 250%;
   font-weight: 300;
   text-align: center;
 }
 
 h2 {
-  font-family: 'Georgia', 'Times', serif;
   font-size: 100%;
   font-weight: 200;
   color: grey;
   text-align: center;
 }
 
-/* Параграфы и подписи */
+/* ========== Абзацы ========== */
 
 p {
-  text-indent: 10%;
-  font-family: 'Georgia', 'Times', serif;
+  text-indent: 2em;
   font-size: 120%;
   font-weight: 100;
-  line-height: 1.5;
+  margin: 1rem 0;
 }
+
+/* ========== Подписи ========== */
 
 .caption {
   font-family: 'Arial', 'Monaco', monospace;
   font-size: 100%;
   font-weight: lighter;
-  line-height: 1.5;
   color: #996633;
+  margin: 0.5rem 0 1rem 0;
 }
 
-/* Малый логотип */
+/* ========== Изображения ========== */
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: grayscale(85%);
+  margin-bottom: 1rem;
+}
+
+/* ========== Малый логотип ========== */
 
 .small-logo {
-  width: auto;
   height: 20px;
   float: right;
 }
 
-/* Галерея */
+/* ========== Галерея ========== */
 
 .gallery {
   display: grid;
@@ -81,34 +91,29 @@ p {
 }
 
 .gallery a:hover {
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .gallery img {
-  width: 100%;
-  height: auto;
-  display: block;
   filter: grayscale(85%);
 }
 
-/* Ссылки */
+/* ========== Ссылки ========== */
 
 a:link,
 a:visited,
-a:hover,
 a:active {
   color: #996633;
   text-decoration: none;
   font-size: 120%;
   font-weight: 100;
-  line-height: 1.5;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-/* Мобильная адаптация */
+/* ========== Адаптация для мобильных устройств ========== */
 
 @media (max-width: 500px) {
   #wrapper {
