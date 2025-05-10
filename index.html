@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>S A T E L</title>
   <meta name="description" content="Одностраничная галерея из 27 работ Александра Сателя. Каждый раз изображения перемешиваются случайным образом.">
+  <meta property="og:title" content="S A T E L">
+  <meta property="og:description" content="Одностраничная галерея из 27 работ Александра Сателя. Каждый раз изображения перемешиваются случайным образом.">
+  <meta property="og:image" content="https://satel.indexmod.xyz/alexandersatel/hannover.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://satel.indexmod.xyz/">
   <link rel="icon" href="https://satel.indexmod.xyz/favicon.ico" />
   <style>
     @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400..800&display=swap');
@@ -98,11 +103,12 @@
     }
 
     .footer img {
-      width: 100%;
+      width: calc(100vw - 80px);
       max-width: 1200px;
       height: auto;
       object-fit: cover;
       align-self: flex-start;
+      margin-left: 40px;
     }
 
     .footer-caption {
