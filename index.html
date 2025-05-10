@@ -1,167 +1,162 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S A T E L</title>
-    <meta name="description" content="Одностраничная галерея из 28 работ Александра Сателя. Каждый раз изображения перемешиваются случайным образом.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S A T E L</title>
+  <meta name="description" content="Одностраничная галерея из 27 работ Александра Сателя. Каждый раз изображения перемешиваются случайным образом.">
+  <link rel="icon" href="https://satel.indexmod.xyz/favicon.ico" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400..800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Verdana:wght@400&display=swap');
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="S A T E L">
-    <meta property="og:description" content="Одностраничная галерея из 28 работ Александра Сателя. Каждый раз изображения перемешиваются случайным образом.">
-    <meta property="og:image" content="https://satel.indexmod.xyz/opener-alexander-satel-24.jpeg">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://satel.indexmod.xyz/">
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Verdana', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="S A T E L">
-    <meta name="twitter:description" content="Одностраничная галерея из 28 работ Александра Сателя. Каждый раз изображения перемешиваются случайным образом.">
-    <meta name="twitter:image" content="https://satel.indexmod.xyz/opener-alexander-satel-24.jpeg">
+    h1 {
+      font-family: 'EB Garamond', serif;
+      font-size: 120px;
+      font-weight: lighter;
+      margin-bottom: 5px;
+      text-align: left;
+      align-self: flex-start;
+      margin-left: 40px;
+    }
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="310x310" href="https://satel.indexmod.xyz/favicon.ico">
+    .container {
+      max-width: 1200px;
+      width: calc(100vw - 80px);
+      padding: 5px;
+      font-size: 20px;
+      line-height: 1.3;
+    }
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400..800&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Verdana:wght@400&display=swap');
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      max-width: 1200px;
+      width: calc(100vw - 80px);
+      gap: 10px;
+    }
 
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: transparent;
-            font-family: "Verdana", sans-serif;
-        }
+    .gallery-item {
+      position: relative;
+    }
 
-        h1 {
-            font-family: "EB Garamond", serif;
-            font-size: 120px;
-            font-weight: lighter;
-            margin-bottom: 5px;
-            text-align: left;
-            align-self: flex-start;
-            margin-left: 40px;
-        }
+    .gallery img {
+      width: 100%;
+      object-fit: cover;
+      display: block;
+    }
 
-        .container {
-            max-width: 1200px;
-            width: calc(100vw - 80px);
-            padding: 5px;
-            background: transparent;
-            box-shadow: none;
-            text-align: left;
-            font-size: 20px;
-            line-height: 1.3;
-        }
+    .gallery-number {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      font-family: 'EB Garamond', serif;
+      font-size: 14px;
+      color: white;
+      background: black;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            width: calc(100vw - 80px);
-            max-width: 1200px;
-            gap: 10px;
-        }
+    .footer {
+      width: 100%;
+      background: #f5f5f5;
+      margin-top: 4em;
+      padding: 2em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 14px;
+      color: #333;
+    }
 
-        .gallery-item {
-            position: relative;
-        }
+    .footer-columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 2em;
+    }
 
-        .gallery img {
-            width: 100%;
-            object-fit: cover;
-            display: block;
-        }
+    .footer-column {
+      flex: 1;
+      min-width: 250px;
+    }
 
-        .gallery-number {
-            position: absolute;
-            top: 5px;
-            left: 5px;
-            font-family: "EB Garamond", serif;
-            font-size: 14px;
-            color: white;
-            background: black;
-            border-radius: 50%;
-            width: 24px;
-            height: 24px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
+    .footer img {
+      max-width: 300px;
+      height: auto;
+    }
+  </style>
 </head>
 <body>
 
-    <h1>S A T E L</h1>
-    <div class="container">
-        <div style="margin-bottom: 2em; font-size: 16px;">
-  <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-    <a href="#artwork-1" style="text-decoration: none; color: inherit;">1. Военный на фоне Москвы</a>
-    <a href="#artwork-2" style="text-decoration: none; color: inherit;">2. Венецианский сюрприз</a>
-    <a href="#artwork-3" style="text-decoration: none; color: inherit;">3. Кутузов на фоне старинной Москвы</a>
-    <a href="#artwork-4" style="text-decoration: none; color: inherit;">4. Лодка на пруду</a>
-    <a href="#artwork-5" style="text-decoration: none; color: inherit;">5. Мужчина с усами</a>
-    <a href="#artwork-6" style="text-decoration: none; color: inherit;">6. Женщина в балахоне</a>
-    <a href="#artwork-7" style="text-decoration: none; color: inherit;">7. Моряк и нимфа</a>
-    <a href="#artwork-8" style="text-decoration: none; color: inherit;">8. Нимфа и купидон</a>
-    <a href="#artwork-9" style="text-decoration: none; color: inherit;">9. Нимфа на берегу</a>
-    <a href="#artwork-10" style="text-decoration: none; color: inherit;">10. Баба и морячок</a>
-    <a href="#artwork-11" style="text-decoration: none; color: inherit;">11. Любовник из сна</a>
-    <a href="#artwork-12" style="text-decoration: none; color: inherit;">12. Полет над Москвой</a>
-    <a href="#artwork-13" style="text-decoration: none; color: inherit;">13. Нимфа и Пегас</a>
-    <a href="#artwork-14" style="text-decoration: none; color: inherit;">14. Кадакес</a>
-    <a href="#artwork-15" style="text-decoration: none; color: inherit;">15. Отдых с попугаями</a>
-    <a href="#artwork-16" style="text-decoration: none; color: inherit;">16. Персидская дорога</a>
-    <a href="#artwork-17" style="text-decoration: none; color: inherit;">17. Кофейник с жемчугом</a>
-    <a href="#artwork-18" style="text-decoration: none; color: inherit;">18. Мадам «Плодородие»</a>
-    <a href="#artwork-19" style="text-decoration: none; color: inherit;">19. Пара у самовара</a>
-    <a href="#artwork-20" style="text-decoration: none; color: inherit;">20. Мужчина с бокалом</a>
-    <a href="#artwork-21" style="text-decoration: none; color: inherit;">21. Натюрморт с нецке</a>
-    <a href="#artwork-22" style="text-decoration: none; color: inherit;">22. На мосту</a>
-    <a href="#artwork-23" style="text-decoration: none; color: inherit;">23. Натюрморт с самоваром, раками и баранками</a>
-    <a href="#artwork-24" style="text-decoration: none; color: inherit;">24. Девушка в черном</a>
-    <a href="#artwork-25" style="text-decoration: none; color: inherit;">25. Супрематическая композиция Александра Сателя</a>
-    <a href="#artwork-26" style="text-decoration: none; color: inherit;">26. Пес и трофеи</a>
-    <a href="#artwork-27" style="text-decoration: none; color: inherit;">27. Кувшин и чужой</a>
-  </div>
-</div>
-</div>
+  <h1>S A T E L</h1>
+  <div class="container">
 
     <div class="gallery" id="gallery"></div>
 
     <script>
-        document.addEventListener("DOMContentLoaded", async () => {
-            const baseUrl = "https://satel.indexmod.xyz/original-alexander-satel-";
-            const gallery = document.getElementById("gallery");
+      document.addEventListener("DOMContentLoaded", () => {
+        const baseUrl = "https://satel.indexmod.xyz/original-alexander-satel-";
+        const gallery = document.getElementById("gallery");
 
-            const images = Array.from({ length: 27 }, (_, i) => ({
-                src: `${baseUrl}${i + 1}.jpeg`,
-                index: i + 1
-            }));
+        const images = Array.from({ length: 27 }, (_, i) => ({
+          src: `${baseUrl}${i + 1}.jpeg`,
+          index: i + 1
+        }));
 
-            images.sort(() => Math.random() - 0.5);
+        images.sort(() => Math.random() - 0.5);
 
-            images.forEach((item, idx) => {
-                const container = document.createElement("div");
-                container.className = "gallery-item";
+        images.forEach((item) => {
+          const container = document.createElement("div");
+          container.className = "gallery-item";
 
-                const img = document.createElement("img");
-                img.src = item.src;
-                img.loading = "lazy";
-                img.alt = `Artwork ${item.index}`;
+          const img = document.createElement("img");
+          img.src = item.src;
+          img.loading = "lazy";
+          img.alt = `Artwork ${item.index}`;
 
-                const number = document.createElement("div");
-                number.className = "gallery-number";
-                number.textContent = item.index;
+          const number = document.createElement("div");
+          number.className = "gallery-number";
+          number.textContent = item.index;
 
-                container.appendChild(img);
-                container.appendChild(number);
-
-gallery.appendChild(container);
-            });
+          container.appendChild(img);
+          container.appendChild(number);
+          gallery.appendChild(container);
         });
+      });
     </script>
+
+  </div>
+
+  <div class="footer">
+    <a href="alexander-satel-bio-russian.html">
+      <img src="https://satel.indexmod.xyz/alexandersatel/documents/alexander-satel-in-hannover.jpg" alt="Alexander Satel in Hannover">
+    </a>
+    <div class="footer-columns">
+      <div class="footer-column">
+        <strong>Alexander Satel</strong><br>
+        Born in Samarkand, painted for Borodino Museum, embraced romantic realism. Active in Russia, praised by Marc Chagall.
+      </div>
+      <div class="footer-column">
+        <strong>Александр Сатель</strong><br>
+        Родился в Самарканде, писал для музея Бородино, приверженец романтического реализма. Активен в России, отмечен Марком Шагалом.
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
