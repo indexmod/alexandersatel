@@ -78,20 +78,20 @@
 
     <header>
       <nav>
-        " + [...Array(28).keys()].map(i => `<a href="#artwork-${i+1}">${i+1}</a>`).join(' ') + "
+        " + [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28].map(i => `<a href="#artwork-${i}">${i}</a>`).join(' ') + "
       </nav>
     </header>
 
     <main class="gallery">
-      " + [...Array(28).keys()].map(i => `
-        <div class="artwork" id="artwork-${i+1}">
-          <img src="https://satel.indexmod.xyz/img/original-alexander-satel-${i+1}.jpeg" alt="Artwork ${i+1}">
-          <h2>Artwork ${i+1}</h2>
-          <p>Акрил, холст / Acrylic on canvas</p>
-          <p>60×73 см., 2016</p>
-          <p>Артикул 20150</p>
-          <p class="price">345 000 руб. / EUR 5 688</p>
-        </div>`).join('') + "
+" + [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28].map(i => `
+  <div class="artwork" id="artwork-${i}">
+    <img src="https://satel.indexmod.xyz/img/original-alexander-satel-${i}.jpeg" alt="Artwork ${i}">
+    <h2>Artwork ${i}</h2>
+    <p>Акрил, холст / Acrylic on canvas</p>
+    <p>60×73 см., 2016</p>
+    <p>Артикул 20150</p>
+    <p class="price">345 000 руб. / EUR 5 688</p>
+  </div>`).join('\n') + "
     </main>
   </div>
 </body>
