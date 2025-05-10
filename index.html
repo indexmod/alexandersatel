@@ -78,51 +78,20 @@
 
     <header>
       <nav>
-        " + Array.from({ length: 28 }, (_, i) => `<a href="#artwork-${i+1}">${i+1}</a>`).join(' ') + "
+        " + [...Array(28).keys()].map(i => `<a href="#artwork-${i+1}">${i+1}</a>`).join(' ') + "
       </nav>
     </header>
 
     <main class="gallery">
-      <!-- Динамически сгенерированные блоки -->
-      " + [
-        [1,"Военный на фоне Москвы","Military man on Moscow landscape"],
-        [2,"Венецианский сюрприз","Venetian surprise"],
-        [3,"Кутузов на фоне старинной Москвы","Kutuzov on the background of old Moscow"],
-        [4,"Лодка на пруду","The boat on the pond"],
-        [5,"Мужчина с усами","The man with the mustache"],
-        [6,"Женщина в балахоне","Woman in robe"],
-        [7,"Моряк и нимфа","Seaman and nymph"],
-        [8,"Нимфа и купидон","Nymph and Cupid"],
-        [9,"Нимфа на берегу","Nymph on the shore"],
-        [10,"Баба и морячок","Baba and the morjachok"],
-        [11,"Любовник из сна","A lover of sleep"],
-        [12,"Полет над Москвой","Flying over Moscow"],
-        [13,"Нимфа и Пегас","Nymph and Pegasus"],
-        [14,"Кадакес","Cadaqués"],
-        [15,"Отдых с попугаями","With parrots"],
-        [16,"Персидская дорога","Persian road"],
-        [17,"Кофейник с жемчугом","Coffee pot and pearls"],
-        [18,"Мадам 'Плодородие'","Madame 'Fertility'"],
-        [19,"Пара у самовара","Couple at the samovar"],
-        [20,"Мужчина с бокалом","A man with a glass"],
-        [21,"Натюрморт с нецке","Still-life with netsuke"],
-        [22,"На мосту","On Bridge"],
-        [23,"Натюрморт с самоваром, раками и баранками","Still-life with a samovar, crayfish and bagels"],
-        [24,"Девушка в черном","Girl in black"],
-        [25,"Супрематическая композиция Александра Сателя","Suprematist composition by Alexander Satel"],
-        [26,"Пес и трофеи","Dog and trophies"],
-        [27,"Кувшин и чужой","Pitcher and alien"],
-        [28,"Кутузов на фоне Москвы","Kutuzov on Moscow landscape"]
-      ].map(([id, ru, en]) => `
-        <div class="artwork" id="artwork-${id}">
-          <img src="original-alexander-satel-${id}.jpeg" alt="${ru}">
-          <h2>${ru} / ${en}</h2>
+      " + [...Array(28).keys()].map(i => `
+        <div class="artwork" id="artwork-${i+1}">
+          <img src="https://satel.indexmod.xyz/img/original-alexander-satel-${i+1}.jpeg" alt="Artwork ${i+1}">
+          <h2>Artwork ${i+1}</h2>
           <p>Акрил, холст / Acrylic on canvas</p>
           <p>60×73 см., 2016</p>
           <p>Артикул 20150</p>
           <p class="price">345 000 руб. / EUR 5 688</p>
-        </div>
-      `).join('\n') + "
+        </div>`).join('') + "
     </main>
   </div>
 </body>
