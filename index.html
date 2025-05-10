@@ -38,9 +38,9 @@
       font-size: 0.9em;
     }
     .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2em;
+      display: flex;
+      flex-direction: column;
+      gap: 3em;
       padding: 2em;
     }
     .artwork {
@@ -52,34 +52,11 @@
       max-width: 100%;
       height: auto;
       border: 1px solid #444;
-      cursor: pointer;
-      transition: transform 0.2s;
-    }
-    .artwork img:hover {
-      transform: scale(1.02);
     }
     .artwork h2 {
       margin-top: 0.5em;
-      font-size: 1.1em;
+      font-size: 1.2em;
       text-align: center;
-    }
-    #lightbox {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: rgba(0, 0, 0, 0.85);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 9999;
-      display: none;
-    }
-    #lightbox img {
-      max-width: 90vw;
-      max-height: 90vh;
-      box-shadow: 0 0 20px #000;
     }
   </style>
 </head>
@@ -89,31 +66,124 @@
     <h2 style="text-align:center">28 Wonderful Artworks by Alexander Satel</h2>
 
     <header>
-      <nav>
-        " + [...Array(28).keys()].map(i => `<a href="#artwork-${i+1}">${i+1}</a>`).join(' ') + "
-      </nav>
-    </header>
+  <nav>
+    <a href="#artwork-1">1</a>
+    <a href="#artwork-2">2</a>
+    <a href="#artwork-3">3</a>
+    <a href="#artwork-4">4</a>
+    <a href="#artwork-5">5</a>
+    <a href="#artwork-6">6</a>
+    <a href="#artwork-7">7</a>
+    <a href="#artwork-8">8</a>
+    <a href="#artwork-9">9</a>
+    <a href="#artwork-10">10</a>
+    <a href="#artwork-11">11</a>
+    <a href="#artwork-12">12</a>
+    <a href="#artwork-13">13</a>
+    <a href="#artwork-14">14</a>
+    <a href="#artwork-15">15</a>
+    <a href="#artwork-16">16</a>
+    <a href="#artwork-17">17</a>
+    <a href="#artwork-18">18</a>
+    <a href="#artwork-19">19</a>
+    <a href="#artwork-20">20</a>
+    <a href="#artwork-21">21</a>
+    <a href="#artwork-22">22</a>
+    <a href="#artwork-23">23</a>
+    <a href="#artwork-24">24</a>
+    <a href="#artwork-25">25</a>
+    <a href="#artwork-26">26</a>
+    <a href="#artwork-27">27</a>
+    <a href="#artwork-28">28</a>
+  </nav>
+</header>
 
     <main class="gallery">
-      " + [...Array(28).keys()].map(i => `
-        <div class="artwork" id="artwork-${i+1}">
-          <img src="https://satel.indexmod.xyz/original-alexander-satel-${i+1}.jpeg" alt="Artwork ${i+1}" onclick="openLightbox(this.src)">
-          <h2>Artwork ${i+1}</h2>
-        </div>`).join('') + "
-    </main>
+  <div class="artwork" id="artwork-1">
+    <h2>Военный на фоне Москвы / Military man on Moscow landscape</h2>
   </div>
-
-  <div id="lightbox" onclick="this.style.display='none'">
-    <img src="" alt="Preview">
+  <div class="artwork" id="artwork-2">
+    <h2>Венецианский сюрприз / Venetian surprise</h2>
   </div>
-
-  <script>
-    function openLightbox(src) {
-      const lightbox = document.getElementById('lightbox');
-      const img = lightbox.querySelector('img');
-      img.src = src;
-      lightbox.style.display = 'flex';
-    }
-  </script>
+  <div class="artwork" id="artwork-3">
+    <h2>Кутузов на фоне старинной Москвы / Kutuzov on the background of old Moscow</h2>
+  </div>
+  <div class="artwork" id="artwork-4">
+    <h2>Лодка на пруду / The boat on the pond</h2>
+  </div>
+  <div class="artwork" id="artwork-5">
+    <h2>Мужчина с усами / The man with the mustache</h2>
+  </div>
+  <div class="artwork" id="artwork-6">
+    <h2>Женщина в балахоне / Woman in robe</h2>
+  </div>
+  <div class="artwork" id="artwork-7">
+    <h2>Моряк и нимфа / Seaman and nymph</h2>
+  </div>
+  <div class="artwork" id="artwork-8">
+    <h2>Нимфа и купидон / Nymph and Cupid</h2>
+  </div>
+  <div class="artwork" id="artwork-9">
+    <h2>Нимфа на берегу / Nymph on the shore</h2>
+  </div>
+  <div class="artwork" id="artwork-10">
+    <h2>Баба и морячок / Baba and the morjachok</h2>
+  </div>
+  <div class="artwork" id="artwork-11">
+    <h2>Любовник из сна / A lover of sleep</h2>
+  </div>
+  <div class="artwork" id="artwork-12">
+    <h2>Полет над Москвой / Flying over Moscow</h2>
+  </div>
+  <div class="artwork" id="artwork-13">
+    <h2>Нимфа и Пегас / Nymph and Pegasus</h2>
+  </div>
+  <div class="artwork" id="artwork-14">
+    <h2>Кадакес / Cadaqués</h2>
+  </div>
+  <div class="artwork" id="artwork-15">
+    <h2>Отдых с попугаями / With parrots</h2>
+  </div>
+  <div class="artwork" id="artwork-16">
+    <h2>Персидская дорога / Persian road</h2>
+  </div>
+  <div class="artwork" id="artwork-17">
+    <h2>Кофейник с жемчугом / Coffee pot and pearls</h2>
+  </div>
+  <div class="artwork" id="artwork-18">
+    <h2>Мадам "Плодородие" / Madame "Fertility"</h2>
+  </div>
+  <div class="artwork" id="artwork-19">
+    <h2>Пара у самовара / Couple at the samovar</h2>
+  </div>
+  <div class="artwork" id="artwork-20">
+    <h2>Мужчина с бокалом / A man with a glass</h2>
+  </div>
+  <div class="artwork" id="artwork-21">
+    <h2>Натюрморт с нецке / Still-life with netsuke</h2>
+  </div>
+  <div class="artwork" id="artwork-22">
+    <h2>На мосту / On Bridge</h2>
+  </div>
+  <div class="artwork" id="artwork-23">
+    <h2>Натюрморт с самоваром, раками и баранками / Still-life with a samovar, crayfish and bagels</h2>
+  </div>
+  <div class="artwork" id="artwork-24">
+    <h2>Девушка в черном / Girl in black</h2>
+  </div>
+  <div class="artwork" id="artwork-25">
+    <h2>Супрематическая композиция Александра Сателя / Suprematist composition by Alexander Satel</h2>
+  </div>
+  <div class="artwork" id="artwork-26">
+    <h2>Пес и трофеи / Dog and trophies</h2>
+  </div>
+  <div class="artwork" id="artwork-27">
+    <h2>Кувшин и чужой / Pitcher and alien</h2>
+  </div>
+  <div class="artwork" id="artwork-28">
+    <h2>Кутузов на фоне Москвы / Kutuzov on Moscow landscape</h2>
+  </div>
+</main>
+  </div>
 </body>
 </html>
